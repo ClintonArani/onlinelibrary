@@ -1,0 +1,353 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and set text color for the body */
+.signup_body{
+    background: transparent;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(images/signup.avif);
+}
+
+/* Style the form container */
+.signup{
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* Style labels for form fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style form input fields */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+/* Style error messages */
+.alert {
+    color: red;
+    margin-top: 5px;
+}
+.head{
+    color: brown;
+    position: inherit;
+    font-family: elephant;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+     
+       
+}
+.head :hover{
+    color: blue;
+    font-size: 25px;
+
+}
+#login-register{
+  font-size: .9em;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+  text-align: center;
+}
+.account{
+  text-align: center;
+  color: crimson;
+}
+
+
+/*Login styling*/
+
+.login_body{
+    background-image: url(images/best.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;  
+    align-items: center;
+    display: flex;
+    
+}
+
+.wrapper{
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+  }
+  .form-box h2{
+    font-size: 2rem;
+    color: #162938;
+    text-align: center;
+  }
+  .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+  }
+  .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -5px;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.99rem;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+  }
+  .remember-forgot{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+  }
+  .remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+  }
+  .login-register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+  }
+
+/*home page styling*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 50px;
+  background-color: rgb(152, 209, 209);
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.navbar ul {
+  display: flex;
+  padding-right: 30px;
+  justify-content: space-around;
+  background: transparent;
+}
+.navbar ul li {
+  list-style: none;
+  padding-right: 60px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.904);
+  position: relative; /* Add this line */
+}
+.navbar ul li a:hover {
+  color: rgba(37, 37, 95, 0.904);
+}
+/* Add this style for the orange underline */
+.navbar ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+}
+.read {
+  background-image: url(images/libo.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100vh;
+}
+.read .description h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: red;
+  transform: scale(1.1);
+
+}
+.description {
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  color: red;
+  position: absolute;
+  top: 30%;
+  
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  margin: 0 15px;
+}
+.social-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+/* Dropdown container styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px; /* Add some padding for better spacing */
+}
+
+/* Dropdown container styles on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Vertical arrangement of dropdown items */
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black; /* Change the text color as needed */
+}
+
+
+

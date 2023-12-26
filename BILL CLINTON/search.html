@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .search-container {
+            margin-top: 20px;
+
+        }
+
+        #search-input {
+            width: 250px;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #search-button {
+            padding: 6px 12px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: 0.5s;
+        }
+
+        #search-button:hover {
+            background-color: red;
+            font-size: 16px;
+        }
+
+        #search-results{
+            margin-top: 20px;
+            text-align: left;
+            
+        }
+        /* dividing the page*/
+        .divide{
+            display: flex;
+            margin-top: 50px;
+            
+        }
+        .left{
+            flex-basis: 25%;
+            text-align: left;
+            border: solid 1px grey;
+            length: max-content;
+            background-color: rgb(212, 255, 0);
+        
+        }
+        .left .tag{
+            text-align: center;
+            color: red;
+            text-shadow: #007BFF;
+            text-transform: uppercase;
+            text-align: center;
+            
+        }
+
+        .left h1{
+            color: red;
+            font-family: algerian, elephant;
+        }
+        .left p{
+            color: darkmagenta;
+            font-size: 15px;
+        }
+        .right{
+            flex-basis: 75%;
+            padding-left: 10px;
+            background-color: white;
+            border: solid 1px grey;
+            margin-left: 2px;
+            background-color: rgb(225, 228, 199);
+            
+            
+        }
+        .divide .left .l2{
+            text-align: center;
+        }
+        .divide .right p{
+            text-transform: capitalize;
+            text-align: justify;
+            color: blue;
+            font-family: elephant, algerian;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+
+
+
+        /*-----------------------------------------------------------------------------------------------------------------------------*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://shorturl.at/ioRY3);
+        }
+
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px -5px; /* Adjusted margin to bring rows closer */
+        }
+
+        .book {
+            background-color: violet;
+            border: 1px solid black;
+            padding: 15px;
+            margin: 8px 3px; /* Adjusted margin to bring books in a row closer */
+            text-align: center;
+            width: 22%; /* Adjusted width to fit 4 books in a row */
+            transition: background-color 0.3s ease;
+            border-radius: 20px;
+        }
+
+        .book:hover {
+            background-color: #007BFF;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .book {
+                width: 45%;
+            }
+        }
+
+    </style>
+    
+    <title>Search Functionality</title>
+</head>
+<body>
+   
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    <div  id="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+    <div class="book-container" id="bookContainer"></div>
+
+    <script src="script.js"></script> <!-- Include JavaScript code -->
+    <script src="javascript.js"></script> <!-- Include JavaScript code -->
+</body>
+</html>
